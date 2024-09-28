@@ -31,13 +31,13 @@ export const EXPERIENCES_PT = [
 ];
 
 export const CONTACT_ENG = {
-  address: "Santos, Rádio Clube, Brazil",
+  address: "Rádio Clube, Santos, Brazil",
   phoneNo: "+55 13 9 9196-6900",
   email: "luizsolely@gmail.com",
 };
 
 export const CONTACT_PT = {
-  address: "Santos, Rádio Clube, Brasil",
+  address: "Rádio Clube, Santos, Brasil",
   phoneNo: "+55 13 9 9196-6900",
   email: "luizsolely@gmail.com",
 };
