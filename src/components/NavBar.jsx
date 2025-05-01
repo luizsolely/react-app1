@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { LanguageContext } from '../components/LanguageContext';
 
 const NavBar = () => {
@@ -11,29 +10,50 @@ const NavBar = () => {
   const toPortuguese = () => setLanguage(0);
 
   return (
-    <nav className='md:mb-20 flex flex-col md:flex-row items-center justify-between py-6'>
-      <div className='md:m-8 flex items-center gap-4 text-4xl md:text-6xl'>
-        <FaReact />
-        <RiTailwindCssFill />
+    <nav className='mb-10 flex flex-col md:flex-row items-center justify-between px-6 py-6'>
+      <div className='flex items-center gap-4 text-4xl md:text-6xl text-neutral-400'>
+        <FaReact className='transition-colors duration-200 hover:text-neutral-100 cursor-pointer' />
+        <RiTailwindCssFill className='transition-colors duration-200 hover:text-neutral-100 cursor-pointer' />
       </div>
 
-      <div className='md:m-8 flex items-center justify-center gap-4 text-2xl'>
-        <div className='m-8 flex flex-row gap-4 items-center justify-center text-2xl'>
-          <p onClick={toPortuguese} className='text-sm tracking-tighter cursor-pointer'>
-            {language === 0 ? 'PORTUGUÊS' : 'PORTUGUESE'}
+      <div className='flex flex-col md:flex-row items-center gap-4 text-neutral-400'>
+        <div className='flex gap-4 text-sm tracking-tighter'>
+          <p
+            onClick={toPortuguese}
+            className='cursor-pointer transition-colors duration-200 hover:text-neutral-100'
+          >
+            PORTUGUÊS
           </p>
-          <p onClick={toEnglish} className='text-sm tracking-tighter cursor-pointer'>
-            {language === 1 ? 'ENGLISH' : 'INGLÊS'}
+          <p
+            onClick={toEnglish}
+            className='cursor-pointer transition-colors duration-200 hover:text-neutral-100'
+          >
+            ENGLISH
           </p>
         </div> 
-        <div className='flex flex-row gap-4'> 
-          <a href="https://www.linkedin.com/in/luiz-felipe4120" target='_blank' rel='noopener noreferrer'>
+        <div className='flex gap-4 text-xl'>
+          <a
+            href="https://www.linkedin.com/in/luiz-felipe4120"
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition-colors duration-200 hover:text-neutral-100'
+          >
             <FaLinkedin />
           </a>
-          <a href="https://github.com/luizsolely" target='_blank' rel='noopener noreferrer'>
+          <a
+            href="https://github.com/luizsolely"
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition-colors duration-200 hover:text-neutral-100'
+          >
             <FaGithub />
           </a>
-          <a href="https://www.instagram.com/luizsolely" target='_blank' rel='noopener noreferrer'>
+          <a
+            href="https://www.instagram.com/luizsolely"
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition-colors duration-200 hover:text-neutral-100'
+          >
             <FaInstagram />
           </a> 
         </div>    
