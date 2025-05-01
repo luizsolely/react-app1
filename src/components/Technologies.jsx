@@ -60,7 +60,7 @@ const Technologies = () => {
         </motion.div>
 
         <motion.div variants={iconVariants(6)} initial="initial" animate="animate" className="cursor-pointer rounded-2xl border-4 border-neutral-800 p-4">
-          <FaGithub className="text-6xl text-[#333]" />
+          <FaGithub className="text-6xl text-[#FFF]" />
         </motion.div>
 
         <motion.div variants={iconVariants(5)} initial="initial" animate="animate" className="cursor-pointer rounded-2xl border-4 border-neutral-800 p-4">

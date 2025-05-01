@@ -1,4 +1,5 @@
 import amazon_logo from "../assets/amazon_logo.webp";
+import crypto_logo from "../assets/crypto_logo.webp";
 
 export const HERO_CONTENT_ENG = `I'm a Back-End Developer focused on Java and Spring, with experience in building scalable APIs. Currently studying Analysis and Development of Systems at the Federal Institute of São Paulo, I’m passionate about creating efficient solutions and continuously improving my skills in the tech world.`;
 
@@ -17,8 +18,15 @@ export const PROJECTS_ENG = [
     title: "Amazon Scraper",
     image: amazon_logo,
     description: "A web application that extracts product data (title, image, rating, and price) from Amazon Brazil and Amazon US based on user search keywords.",
-    technologies: ["Bun", "Puppeteer", "Express"],
+    technologies: ["Javascript", "Bun", "Puppeteer", "Express"],
     github_link: "https://github.com/luizsolely/amazon-scraper"
+  },
+  {
+    title: "Crypto Price Tracker",
+    image: crypto_logo,
+    description: "A web application for real-time cryptocurrency price tracking. Academic project that fetches and displays updated data from various cryptocurrencies through a public API.",
+    technologies: ["Javascript", "React", "Express", "LowDB"],
+    github_link: "https://github.com/luizsolely/react-express"
   }
 ];
 
@@ -29,6 +37,13 @@ export const PROJECTS_PT = [
     description: "Uma aplicação web que extrai dados de produtos (título, imagem, avaliação e preço) da Amazon Brasil e Amazon US com base em palavras-chave de busca fornecidas pelo usuário.",
     technologies: ["Bun", "Puppeteer", "Express"],
     github_link: "https://github.com/luizsolely/amazon-scraper"
+  },
+  {
+    title: "Crypto Price Tracker",
+    image: crypto_logo,
+    description: "Uma aplicação web para rastreamento de preços de criptomoedas. Projeto acadêmico que busca e exibe dados atualizados de várias criptomoedas através de uma API pública.",
+    technologies: ["React", "Express", "LowDB"],
+    github_link: "https://github.com/luizsolely/react-express"
   }
 ];
 
