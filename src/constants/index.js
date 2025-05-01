@@ -1,3 +1,5 @@
+import amazon_logo from "../assets/amazon_logo.webp";
+
 export const HERO_CONTENT_ENG = `I'm a Back-End Developer focused on Java and Spring, with experience in building scalable APIs. Currently studying Analysis and Development of Systems at the Federal Institute of São Paulo, I’m passionate about creating efficient solutions and continuously improving my skills in the tech world.`;
 
 export const HERO_CONTENT_PT = `Sou um Desenvolvedor Back-End focado em Java e Spring, com experiência na construção de APIs escaláveis. Atualmente, cursando Análise e Desenvolvimento de Sistemas no Instituto Federal de São Paulo, sou apaixonado por criar soluções eficientes e aprimorar minhas habilidades constantemente.`;
@@ -9,6 +11,26 @@ export const ABOUT_TEXT_PT = `Sou Luiz Felipe, desenvolvedor Back-End de 19 anos
 export const TECHNOLOGIES_TEXT_ENG = `Studying Java, Spring, and building backend APIs.`;
 
 export const TECHNOLOGIES_TEXT_PT = `Estudando Java, Spring e desenvolvimento de APIs backend.`;
+
+export const PROJECTS_ENG = [
+  {
+    title: "Amazon Scraper",
+    image: amazon_logo,
+    description: "A web application that extracts product data (title, image, rating, and price) from Amazon Brazil and Amazon US based on user search keywords.",
+    technologies: ["Bun", "Puppeteer", "Express"],
+    github_link: "https://github.com/luizsolely/amazon-scraper"
+  }
+];
+
+export const PROJECTS_PT = [
+  {
+    title: "Amazon Scraper",
+    image: amazon_logo,
+    description: "Uma aplicação web que extrai dados de produtos (título, imagem, avaliação e preço) da Amazon Brasil e Amazon US com base em palavras-chave de busca fornecidas pelo usuário.",
+    technologies: ["Bun", "Puppeteer", "Express"],
+    github_link: "https://github.com/luizsolely/amazon-scraper"
+  }
+];
 
 export const EXPERIENCES_ENG = [
   {

@@ -5,6 +5,7 @@ import Technologies from './components/Technologies'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import { LanguageProvider } from '../src/components/LanguageContext';
+import Projects from './components/Projects'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Hero />
           <About />
           <Technologies />
+          <Projects />
           <Experience />
           <Contact />
         </LanguageProvider>
